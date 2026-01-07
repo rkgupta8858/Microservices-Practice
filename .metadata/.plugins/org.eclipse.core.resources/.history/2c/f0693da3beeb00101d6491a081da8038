@@ -1,0 +1,6 @@
+package com.ecom.order.request;
+
+public class OrderRequest {
+	private String productName;
+	private double price;
+}

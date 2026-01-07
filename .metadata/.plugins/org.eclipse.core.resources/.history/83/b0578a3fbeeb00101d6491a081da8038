@@ -1,0 +1,10 @@
+package com.ecom.order.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Order {
+	private int orderId;
+	private String productName;
+	private double price;
+}

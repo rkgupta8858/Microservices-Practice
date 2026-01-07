@@ -1,0 +1,14 @@
+package com.ecom.order.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ecom.order.repository.OrderRepository;
+
+@Service
+public class OrderService {
+
+	@Autowired
+	OrderRepository repository;
+
+}

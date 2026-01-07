@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: order-service
+
+  profiles:
+    active: dev
+
+  config:
+    import: configserver:http://localhost:8888

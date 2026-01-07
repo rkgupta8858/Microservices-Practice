@@ -1,0 +1,18 @@
+package com.ecom.order.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ecom.order.service.OrderService;
+
+@RestController
+public class OrderController {
+
+	OrderService service;
+	
+	
+	@PostMapping("/placeOrder")
+	public String orderPlaced() {
+		return "Order Placed Successfylly...";
+	}
+}
