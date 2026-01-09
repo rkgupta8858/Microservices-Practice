@@ -10,3 +10,7 @@ spring:
 
   config:
     import: configserver:http://localhost:8888
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:${random.value}
+
