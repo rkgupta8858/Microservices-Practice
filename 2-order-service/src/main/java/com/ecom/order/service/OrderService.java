@@ -1,5 +1,7 @@
 package com.ecom.order.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +22,10 @@ public class OrderService {
 		order.setStatus(request.getStatus());
 
 		return orderRepository.save(order);
+	}
+
+	public Order getOrder(int id) {
+		return orderRepository.findById(id).orElseThrow(() -> new RuntimeException("Order not found!!!"));
 	}
 
 }

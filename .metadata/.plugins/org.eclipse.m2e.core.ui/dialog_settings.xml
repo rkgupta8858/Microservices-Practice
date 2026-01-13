@@ -18,6 +18,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -29,10 +30,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.rahul.MyProject"/>
 		</list>
 		<list key="groupId">
+			<item value="com.rahul"/>
 		</list>
 		<list key="artifactId">
+			<item value="MyProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
