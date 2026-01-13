@@ -1,11 +1,11 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-config-client=6
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-config-client=7
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-config-server=3
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka=6
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka=7
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka-server=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=5
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.mysql=5
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=9
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=6
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.mysql=6
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=10
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.zipkin=1
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=3-product-service
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=4.0.1

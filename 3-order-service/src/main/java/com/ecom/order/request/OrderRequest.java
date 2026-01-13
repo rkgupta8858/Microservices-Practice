@@ -1,16 +1,15 @@
 package com.ecom.order.request;
 
 public class OrderRequest {
-	private String productName;
+	private int productId;
 	private int quantity;
-	private double price;
 
-	public String getProductName() {
-		return productName;
+	public int getProductId() {
+		return productId;
 	}
 
-	public void setProductName(String productName) {
-		this.productName = productName;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 
 	public int getQuantity() {
@@ -19,14 +18,6 @@ public class OrderRequest {
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
-	}
-
-	public double getPrice() {
-		return price;
-	}
-
-	public void setPrice(double price) {
-		this.price = price;
 	}
 
 }

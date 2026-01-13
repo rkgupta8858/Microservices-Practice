@@ -1,9 +1,18 @@
 package com.ecom.order.request;
 
 public class OrderRequest {
+	private int productId;
 	private String productName;
 	private double price;
 	private String status;
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
 
 	public String getProductName() {
 		return productName;

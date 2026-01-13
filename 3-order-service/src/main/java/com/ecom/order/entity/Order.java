@@ -7,15 +7,18 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "micro_order3")
+@Table(name = "orders")
 public class Order {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+
+	private int productId;
 	private String productName;
-	private int quantity;
 	private double price;
+	private int quantity;
+	private String status;
 
 	public int getId() {
 		return id;
@@ -23,6 +26,14 @@ public class Order {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 
 	public String getProductName() {
@@ -33,6 +44,14 @@ public class Order {
 		this.productName = productName;
 	}
 
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
 	public int getQuantity() {
 		return quantity;
 	}
@@ -41,12 +60,12 @@ public class Order {
 		this.quantity = quantity;
 	}
 
-	public double getPrice() {
-		return price;
+	public String getStatus() {
+		return status;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

@@ -13,9 +13,18 @@ public class Order {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int orderId;
+	private int productId;
 	private String productName;
 	private double price;
 	private String status;
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
 
 	public int getOrderId() {
 		return orderId;

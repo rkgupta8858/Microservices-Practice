@@ -10,16 +10,14 @@ import com.ecom.order.entity.Order;
 import com.ecom.order.request.OrderRequest;
 import com.ecom.order.service.OrderService;
 
-
 @RestController
 public class OrderController {
 
 	@Autowired
-	private OrderService service;
+	private OrderService orderService;
 
-	@PostMapping("/orderPlaced3")
-	public ResponseEntity placeOrder(@RequestBody OrderRequest request) {
-		Order placeOrder = service.placeOrder(request);
-		return ResponseEntity.ok(placeOrder);
+	@PostMapping("/orderPlaced")
+	public ResponseEntity<Order> placeOrder(@RequestBody OrderRequest request) {
+		return ResponseEntity.ok(orderService.placeOrder(request));
 	}
 }
